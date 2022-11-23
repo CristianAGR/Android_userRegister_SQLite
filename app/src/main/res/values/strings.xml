@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">AndroidExamenP2</string>
+    <string name="act_registro">Registro</string>
+    <string name="act_lista">Lista Usuarios</string>
+    <string name="act_detalle">Detalle Usuario</string>
+    <string name="nombre">Nombre</string>
+    <string name="usuario">Usuario</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="escolaridad">Escolaridad</string>
+    <string name="civil">Estado Civil</string>
+    <string name="soltero">Soltero</string>
+    <string name="casado">Casado</string>
+    <string name="habilidades">Habilidades Técnicas</string>
+    <string name="java">Java</string>
+    <string name="csharp">C#</string>
+    <string name="cmas">C++</string>
+    <string name="entrar">Entrar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="atras">Atras</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="ingresarNombre">Ingrese su nombre</string>
+    <string name="ingresarUsuario">Ingrese su usuario</string>
+    <string name="ingresarContraseña">Ingrese su contraseña</string>
+    <string name="seleccionarEscolaridad">Seleccione su escolaridad</string>
+
+    <string-array name="Escolaridad">
+        <item>@string/seleccionarEscolaridad</item>
+        <item>Primaria</item>
+        <item>Secundaria</item>
+        <item>Preparatoria</item>
+        <item>Universidad</item>
+        <item>Maestría</item>
+    </string-array>
+
+</resources>

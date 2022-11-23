@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:text="@string/nombre"
+        app:layout_constraintStart_toStartOf="@+id/lytName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lytName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/ingresarNombre" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/usuario"
+        app:layout_constraintBottom_toTopOf="@+id/lytUsername2"
+        app:layout_constraintStart_toStartOf="@+id/lytName" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lytUsername2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="53dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lytName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtUsername2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/ingresarUsuario" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="@string/contraseña"
+        app:layout_constraintStart_toStartOf="@+id/lytPassword2"
+        app:layout_constraintTop_toBottomOf="@+id/lytUsername2" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:text="@string/escolaridad"
+        app:layout_constraintBottom_toTopOf="@+id/spEscolaridad"
+        app:layout_constraintStart_toStartOf="@+id/spEscolaridad" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lytPassword2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtPassword2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/ingresarContraseña"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spEscolaridad"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:contentDescription="@string/seleccionarEscolaridad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/civil"
+        app:layout_constraintStart_toStartOf="@+id/spEscolaridad"
+        app:layout_constraintTop_toBottomOf="@+id/spEscolaridad" />
+
+    <RadioGroup
+        android:id="@+id/rgEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <RadioButton
+            android:id="@+id/rbSoltero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/soltero" />
+
+        <RadioButton
+            android:id="@+id/rbCasado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/casado" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cbCS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/csharp"
+        app:layout_constraintEnd_toStartOf="@+id/btnRegistrar2"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="@string/habilidades"
+        app:layout_constraintBottom_toTopOf="@+id/cbJava"
+        app:layout_constraintStart_toStartOf="@+id/cbJava" />
+
+    <CheckBox
+        android:id="@+id/cbJava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/java"
+        app:layout_constraintBottom_toTopOf="@+id/btnBack"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cbCM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="@string/cmas"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cbCS"
+        app:layout_constraintStart_toStartOf="@+id/btnRegistrar2" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="27dp"
+        android:text="@string/atras"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnRegistrar2"
+        app:layout_constraintEnd_toStartOf="@+id/btnRegistrar2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnRegistrar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="36dp"
+        android:clickable="true"
+        android:text="@string/registrarse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnBack" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
